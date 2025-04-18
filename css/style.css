@@ -17580,6 +17580,9 @@ section {
         content: none;
     }
 }
+.bg-yellow{
+    background-color: #ff914d;
+}
 
 .bg-light-dark {
     background-color: var(--light-dark);
@@ -34726,6 +34729,7 @@ select {
     flex-direction: column;
     border-radius: 0 30px 30px 0;
     justify-content: center;
+    background-color: #ff914d;
 }
 
 .dz-card.style-7.blog-half .dz-info .dz-title {
@@ -35890,6 +35894,8 @@ video#video-background {
 .about-thumb img {
     width: 100%;
     height: 100%;
+    border: 3px solid #ff914d;
+    padding:3px;
 }
 
 .dz-media.style-1 {
@@ -36401,6 +36407,8 @@ video#video-background {
     border-radius: 0 25% 0 0;
     transition: 0.5s;
     width: 100%;
+    border: 3px solid #000;
+    padding:4px;
 }
 
 .testimonial-swiper .swiper-slide.swiper-slide-active .about-box .about-img img {
@@ -37769,6 +37777,8 @@ video#video-background {
     -webkit-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
+    border:4px solid #ff914d;
+    padding:5px;
 }
 
 .shop-card:hover .dz-media img {
@@ -48432,7 +48442,7 @@ pre {
 
 .contact-area1 {
     padding: 40px 30px;
-    background: var(--secondary);
+    /* background: var(--secondary); */
     max-width: 520px;
     margin-bottom: -215px;
     position: relative;
@@ -48444,6 +48454,7 @@ pre {
 .contact-area1.style-1 {
     /* margin: 0 0 -215px auto; */
     margin:-67px 0 0px auto;
+    background-color: #ff914d;
 }
 
 @media only screen and (max-width: 991px) {
@@ -48635,13 +48646,14 @@ body .working-location img {
 
 .contact-info.style-1 .title {
     font-weight: 600;
-    font-size: 40px;
-    color: var(--title);
+    font-size: 35px;
+    color: #ff914d;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1199px) {
     .contact-info.style-1 .title {
-        font-size: 32px;
+        font-size: 30px;
     }
 }
 
@@ -48660,24 +48672,25 @@ body .working-location img {
 .contact-info.style-1 .text {
     color: var(--title);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: unset;
     margin-right: unset;
     max-width: 540px;
     margin-bottom: 50px;
     font-family: var(--font-family-title);
+    text-align:justify;
 }
 
 @media only screen and (max-width: 1199px) {
     .contact-info.style-1 .text {
-        font-size: 26px;
+        font-size: 18px;
         margin-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .contact-info.style-1 .text {
-        font-size: 22px;
+        font-size: 16px;
         margin-bottom: 15px;
         width: 100%;
     }
@@ -48685,7 +48698,7 @@ body .working-location img {
 
 @media only screen and (max-width: 575px) {
     .contact-info.style-1 .text {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -48702,7 +48715,7 @@ body .working-location img {
 
 .contact-info.style-1 .contact-bottom h3,
 .contact-info.style-1 .contact-bottom .h3 {
-    color: var(--title);
+    color: #ff914d;
 }
 
 @media only screen and (max-width: 767px) {
@@ -48723,10 +48736,13 @@ body .working-location img {
 }
 
 .contact-info.style-1 .contact-bottom ul li {
+    position: relative;
     font-weight: 500;
     font-size: 18px;
     color: var(--title);
     font-family: var(--font-family-title);
+    bottom: 25px;
+    left: 43%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -61236,6 +61252,7 @@ footer {
 
 footer .widget_about p {
     margin-bottom: 20px;
+    color:#fff;
 }
 
 footer .footer-logo {
@@ -61253,6 +61270,7 @@ footer .footer-title {
     position: relative;
     line-height: 1.2;
     font-size: 20px;
+    color:#ff914d;
 }
 
 footer .footer-top {
@@ -61273,6 +61291,7 @@ footer .footer-bottom span,
 footer .footer-bottom p {
     margin-bottom: 0;
     font-weight: 600;
+    color:#fff;
 }
 
 footer .footer-bottom .text-start,
@@ -61347,6 +61366,7 @@ footer .widget_services ul li a {
     -webkit-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
+    color:#fff;
 }
 
 footer .widget-address {
@@ -61357,12 +61377,13 @@ footer .widget-address li {
     padding: 4px 0;
     font-size: 15px;
     font-weight: 500;
-    color: var(--title);
+    color: #ff914d;
 }
 
 footer .widget-address li p {
     margin-bottom: 0;
     font-weight: 500;
+    color:#fff;
 }
 
 footer .widget-address li span {
@@ -61662,11 +61683,26 @@ footer.footer-dark .icon-bx-wraper {
     z-index: 1;
     border-top: 1px solid #ff914d;
     overflow: hidden;
-    background-color: var(--light);
+    background-image: url(../images/hyped-house/bg-footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.site-footer.style-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Black overlay with 50% opacity */
+    z-index: -1; /* Keep the overlay behind the content */
 }
 
 .site-footer.style-1 .footer-top {
     padding: 90px 0px 60px;
+    position: relative;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 991px) {
@@ -61751,6 +61787,7 @@ footer.footer-dark .icon-bx-wraper {
 .site-footer.style-3 .footer-top {
     padding-left: 130px;
     padding-top: 100px;
+ 
 }
 
 @media only screen and (max-width: 1199px) {
@@ -62232,3 +62269,32 @@ footer.footer-dark .icon-bx-wraper {
 }
 
 /*# sourceMappingURL=style.css.map */
+.contact-info .contact-bottom .contact-left  h3{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info .contact-bottom .contact-left i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ff914d; /* Adjust color as needed */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flipflop 2s infinite;
+    color:#000;
+}
+.contact-info .contact-bottom .contact-left .icon-wrapper i {
+    font-size: 20px;
+    color: #333; /* Adjust color as needed */
+}
+
+@keyframes flipflop {
+    0%, 100% {
+        transform: rotateY(0);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+}
